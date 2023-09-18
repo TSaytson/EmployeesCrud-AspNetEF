@@ -1,0 +1,10 @@
+@model aspnetefcore.Models.Employee
+<h2>Employees sign up</h2>
+
+<form class="form-horizontal" asp-controller="Employees" asp-action="Save" method="post">
+  <input hidden type="number" class="form-control" asp-for="Id" placeholder="Id" >
+  <input type="text" class="form-control" asp-for="Nome" placeholder="Nome">
+  <input type="number" class="form-control" asp-for="Salario" placeholder="Salario">
+  <input type="text" class="form-control" asp-for="Cpf" placeholder="Cpf">
+  <button class="btn btn-success">Sign up</button>
+</form>
